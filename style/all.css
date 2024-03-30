@@ -1,0 +1,200 @@
+@charset "utf-8";
+
+/* 所有網頁公用設定------------------------------------- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, 微軟正黑體, sans-serif;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+
+/* helper---------------------------------------------- */
+
+.container {
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+.mx-auto {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Header---------------------------------------------- */
+
+.header {
+    /* background-color: pink; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header-foot, .header-btn-xmark {
+    display: none;
+}
+
+.header-head {
+    width: 80px;
+}
+
+.header-head, .header-body, .header-foot {
+    padding: .5rem 1rem;
+    box-sizing: border-box;
+}
+
+.header-ul {
+    display: flex;
+    padding: .5rem 1rem;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 30px;
+}
+
+.header-li {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.header-link {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 600;
+    transition-duration: .3s;
+}
+
+.header-link:hover {
+    color: #cf7688;
+}
+
+.header-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Banner-------------------------------------- */
+
+.banner {
+    color: #fff;
+    background-image: linear-gradient(135deg, #cf7688 20%, #f5ba54 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100% );
+}
+
+.banner-container {
+    display: flex;
+    align-items: center;
+}
+
+.banner-head, .banner-body {
+    width: 50%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+}
+
+.banner-title {
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+}
+
+.banner-small {
+    display: block;
+    margin-top: .5rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.banner-subTitle {
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+    color: rgba(255, 255, 255, .7);
+    line-height: 1.5;
+}
+
+.banner-desc {
+    line-height: 1.6;
+}
+
+.banner-ul {
+    display: flex;
+    margin-bottom: 4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .3);
+}
+
+.banner-ul-order1 {order: -1;}
+
+.banner-li+.banner-li {
+    position: relative;
+    margin-left: 1rem;
+}
+
+.banner-li+.banner-li::before {
+    position: absolute;
+    top: .4rem;
+    left: -.6rem;
+    width: 4px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, .2);
+    content: "";
+}
+
+
+.banner-btns {
+    margin-top: 2rem;
+}
+
+.banner-btn {
+    padding: 1rem 3rem;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    border: solid 2px #fff;
+    border-radius: 5px;
+    text-decoration: .3s;
+}
+
+.banner-btn:hover {
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.banner-img {
+    max-width: 100%;
+    position: absolute;
+}
+
+.banner-img-mobile {
+    z-index: 1;
+    left: 0;
+    bottom: 5rem;
+}
+
+.banner-img-pad {
+    bottom: -2rem;
+    right: 1rem;
+}
+
+.banner-index .banner-head,
+.banner-index .banner-body {
+    padding-top: 3rem;
+}
+
+.banner-index .banner-head {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.banner-index .banner-body {
+    width: 60%;
+    position: relative;
+}
