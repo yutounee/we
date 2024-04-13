@@ -22,6 +22,11 @@ img {
     box-sizing: border-box;
 }
 
+.container-md {
+    max-width: 800px;
+    box-sizing: border-box;
+}
+
 .mx-auto {
     margin-right: auto;
     margin-left: auto;
