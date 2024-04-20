@@ -124,3 +124,74 @@
     text-align: justify;
     color: rgba(0, 0, 0, .7);
 }
+
+
+
+/* RWD----------------------------------------- */
+
+@media screen and (max-width: 480px) {
+
+
+    .state-head,
+    .state-body {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .state-desc {
+        line-height: 1.5;
+    }
+
+    .state-ul {
+        flex-wrap: wrap;
+    }
+
+    .state-li {
+        width: 50%;
+        box-sizing: border-box;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .state-li:nth-child(-n+2) {
+        padding-bottom: 1rem;
+    }
+
+    .state-li:nth-child(n+3) {
+        padding-top: 1rem;
+        border-top: solid 1px rgba(0, 0, 0, .1);
+    }
+
+    .state-li:nth-child(3) {
+        border-left: none;
+    }
+
+    .stare-number, .state-unit, .state-term, .state-tips {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .state-number {
+        font-size: 12vw;
+    }
+
+    .state-unit {
+        font-size: 5vw;
+    }
+
+    .state-term {
+        font-size: 2rem;
+    }
+
+    .evn {
+        flex-direction: column;
+    }
+
+    .evn-head, .evn-body {
+        width: auto;
+    }
+
+    .evn-title {
+        text-align: center;
+    }
+}

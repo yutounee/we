@@ -7,7 +7,7 @@
     padding-bottom: 5rem;
 }
 
-.base.container {
+.base-container {
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -209,3 +209,100 @@
 .build-li-1 {background-color: #f5ba54;}
 .build-li-2 {background-color: #eaa666;}
 .build-li-3 {background-color: #cf7688;}
+
+
+
+
+/* animation---------------------------------------- */
+
+.ani-move-downToUp,
+.ani-move-leftToRight {
+    animation-fill-mode: forwards;    
+}
+
+
+.ani-move-downToUp {
+    animation-name: downToUp;
+    animation-duration: .5s;
+    transform: translateY(120%);
+}
+
+
+.ani-move-leftToRight {
+    animation-name: leftToRight;
+    animation-duration: 1s;
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+
+.ani-delay-1 {
+    animation-delay: .3s;
+}
+
+.ani-delay-2 {
+    animation-delay: .6s;
+}
+
+.ani-delay-3 {
+    animation-delay: .9s;
+}
+
+.ani-delay-4 {
+    animation-delay: 1s;
+}
+
+.ani-delay-5 {
+    animation-delay: 1.2s;
+}
+
+.ani-delay-6 {
+    animation-delay: 1.3s;
+}
+
+.ani-delay-7 {
+    animation-delay: 1.4s;
+}
+
+@keyframes downToUp {
+    to {transform: translateY(0);}
+}
+
+@keyframes leftToRight {
+    to {
+        transform: translateX(0);
+        opacity: 1;}
+}
+
+
+/* RWD----------------------------------------- */
+
+@media screen and (max-width: 480px) {
+
+    .service-items {
+        flex-direction: column;
+    }
+
+    .service-item {
+        width: auto;
+    }
+    
+
+    .base-intro {
+        clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
+    }
+
+    .base-intro .base-head,
+    .base-intro .base-btns {
+        text-align: center;
+    }
+
+    .base-build .base-body {
+        max-width: 80vw;
+    }
+
+
+    .project-item {
+        width: 33.333333%;
+    }
+}

@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+.process-item {
+    display: flex;
+}
+
+.process-head {
+    width: 30%;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: .3s;
+}
+
+.process-item:hover .process-head {
+    background-color: #cf7688;
+}
+
+.process-body {
+    width: 70%;
+    background-color: #fff;
+}
+
+.process-item + .process-item {
+    margin-top: 2rem;
+}
+
+.process-name {
+    color: rgba(255, 255, 255, .7);
+}
+
+.process-cht, .process-en {
+    display: block;
+}
+
+.process-cht {
+    font-size: 2.5rem;
+}
+
+.process-en {
+    margin-top: .5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+/* 跟編號做對齊,list-style-position:inside
+outside是預設 */
+
+/* https://jsbin.com/bebotopamu/1/edit?html,css,output */
+
+.process-ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.process-li {
+    padding: 2rem;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.process-li::marker {
+    color: #cf7688;
+    font-size: 1.25rem;
+}
+
+.process-li:nth-child(n+3) {
+    padding-top: 0;
+}
+
+.process-title {
+    color: #cf7688;
+    font-weight: 600;
+    font-size: 1.25rem;
+    display: inline;
+}
+
+.process-desc {
+    margin-top: .5rem;
+    color: rgba(0, 0, 0, .7);
+    line-height: 1.5;
+}
+
+
+/* RWD----------------------------------------- */
+
+@media screen and (max-width: 480px) {
+    .process-item, .process-ol {
+        flex-direction: column;
+    }
+
+    .process-head, .process-body, .process-li {
+        width: auto;
+    }
+
+    .process-head {
+        padding: 1rem;
+    }
+
+    .process-li {
+        padding: 0;
+        margin: 1rem;
+    }
+
+    .process-name {
+        text-align: center;
+    }
+}

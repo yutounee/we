@@ -105,6 +105,7 @@ img {
     width: 50%;
     padding-left: 1rem;
     padding-right: 1rem;
+    box-sizing: border-box;
 }
 
 .banner-index .banner-head,
@@ -215,12 +216,13 @@ position: relative;
     position: absolute;
 }
 
+
 .banner-img-desktop {
     margin-left: 4.5rem;
 }
 
 .banner-img-mobile {
-    /* z-index: 1; */
+    z-index: 1;
     left: 0;
     bottom: 5rem;
 }
@@ -236,6 +238,9 @@ position: relative;
     object-fit: cover;
 }
 /* service) */
+
+
+
 
 
 
@@ -317,3 +322,161 @@ position: relative;
     font-size: 3rem;
 }
 
+
+
+
+
+
+/* RWD----------------------------------------- */
+
+@media screen and (max-width: 480px) {
+
+    /* header--- */
+
+    .header {
+        background-color: rgba(255, 255, 255, .7);
+        box-shadow: 0 5px 5px rgba(0, 0, 0, .05);
+        z-index: 20;
+    }
+
+    .header-body {
+        display: none;
+    }
+
+    .header-foot {
+        display: block;
+    }
+
+    .header-img-logo {
+        opacity: .5;
+    }
+
+    .header-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .8);
+    }
+
+    .header-ul {
+        flex-direction: column;
+        background-color: transparent;
+    }
+
+    .header-link {
+        display: block;
+        padding: .7rem 1rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .header-btn {
+        padding: 0;
+        font-size: 2rem;
+        border: none;
+        background-color: transparent;
+    }
+
+    .header-btn-bars {
+        color: rgba(0, 0, 0, .5);
+    }
+
+    .header-btn-xmark {
+        display: block;
+        position: absolute;
+        top: .75rem;
+        right: 1rem;
+        color: #9e9e9e;
+    }
+
+
+    /* banner--- */
+
+    .banner {
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+    }
+
+    .banner-container {
+        flex-direction: column;
+    }
+
+    .banner-head, .banner-body,
+    .banner-index .banner-head,
+    .banner-index .banner-body {
+        width: 100%;
+    }
+
+    .banner-head,
+    .banner-index .banner-head {
+        padding-top: 5rem;
+        padding-bottom: 1rem;
+        text-align: center;
+    }
+
+    .banner-body {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .banner-index .banner-body {
+        padding-top: 1rem;
+    }
+
+    .banner-title {
+        font-size: 7vw;
+    }
+
+    .banner-title-line::after {
+        left: 50%;
+        margin-left: -1.5rem;
+    }
+
+    .banner-service .banner-img,
+    .banner-about .banner-img {
+        object-position: center;
+    }
+
+    .banner-small {
+        font-size: 5vw;
+    }
+
+    .banner-ul {
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    .banner-img-mobile {
+        width: 40vw;
+        bottom: 2.5rem;
+    }
+
+    .banner-img-desktop {
+        width: 70vw;
+        margin-left: 10vw;
+    }
+
+    .banner-img-pad {
+        width: 60vw;
+    }
+
+
+    /* footer--- */
+    .footer {
+        padding-top: 1rem;
+        clip-path: none;
+    }
+    
+    .footer-head {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-body {
+        display: none;
+    }
+}
