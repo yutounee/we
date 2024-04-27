@@ -84,15 +84,44 @@
 
     <!-- 內容區 -->
     <main class="main">
-        <header class="main-head container-md mx-auto">
-            <h2 class="main-title">
-                <span class="main-cht">關於我們</span>
-                <small class="main-small">who we are?</small>
-            </h2>
-            <p class="main-desc">
-                We是由專業網站規劃、網頁設計、系統開發團隊所組成，堅持站在客戶立場思考並規劃最適合客戶的網頁設計方案，自民國99年成立以來，已協助眾多公司企業、機關團體執行各種網站建置專案，並獲得客戶的一致好評。</p>
-            <p class="main-desc">We 著滿滿的好奇心，不自我設限，廣泛接受各行各業的挑戰，藉此累積無數的網頁設計經驗，並將這些經驗引薦到其他的行業之中。因此不管是一般製造業、餐飲 /
-                服務業的形象網站製作，或是競標/購物網站、入口平台、傳直銷經營平台，企業內部系統開發，只要您提出需求，我們都可以提供相關解決方案。</p>
+        <header class="header">
+
+            <div class="header-head">
+                <a href="./">
+                    <img class="header-img header-img-logo" src="./images/logo-header.png" width="60" height="58"
+                        alt="We Studio">
+                </a>
+            </div>
+    
+            <div id="HeaderBody" class="header-body">
+                <nav class="header-nav">
+                    <ul class="header-ul">
+                        <li class="header-li">
+                            <a class="header-link" href="./service.html">what we do</a>
+                        </li>
+                        <li class="header-li">
+                            <a class="header-link" href="./about.html">who we are</a>
+                        </li>
+                        <li class="header-li">
+                            <a class="header-link" href="./works.html">our projects</a>
+                        </li>
+                        <li class="header-li">
+                            <a class="header-link" href="./process.html">how we do</a>
+                        </li>
+                    </ul>
+    
+                    <button id="HeaderBtnXmark"  class="header-btn header-btn-xmark" type="button">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </button>
+                </nav>
+            </div>
+    
+            <div class="header-foot">
+                <button id="HeaderBtnBars"  class="header-btn header-btn-bars" type="button">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+    
         </header>
 
 
@@ -197,6 +226,8 @@
         </div>
     </aside>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/all.js"></script>
 </body>
 
 
